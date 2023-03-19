@@ -69,7 +69,23 @@ User-definable variables: kebab-case
     --piOSlightgrey:lightgrey;
     --piOSgrey:     grey;
     --piOSblack:    black;
-    
+    --dosBlu:     #0000a8;
+    --dosBlk:     #000000;
+    --dosGrn:     #00a800;
+    --dosCyn:     #00a8a8;
+    --dosRed:     #a80000;
+    --dosMag:     #a800a8;
+    --dosBrn:     #a85400;
+    --dosGry:     #a8a8a8;
+    --dosDrkGry:  #545454;
+    --dosLtBlu:   #5454fc;
+    --dosLtGrn:   #54fc54;
+    --dosLtCyn:   #54fcfc;
+    --dosLtRed:   #fc5454;
+    --dosLtMag:   #fc54fc;
+    --dosYel:     #fcfc54;
+    --dosWht:     #fcfcfc;
+	
     /* Set default fonts */
     --font-display: PerfectDOS, monospace;  /* For server and channel title */
 	--font-primary: PerfectDOS, monospace;  /* For almost everything else */
@@ -85,27 +101,27 @@ User-definable variables: kebab-case
     --thinBorder:  1px 3px;
 
     /* Text colours */
-	--header-primary:           var(--piOSwhite); /* Server name, channel name, default user colour */
-	--header-secondary:         var(--piOSgrey);
-    --text-normal:              var(--piOSwhite);
-    --text-muted:               var(--piOSgrey);
-    --text-link:                var(--piOSwhite);
-    --text-link-low-saturation: var(--piOSwhite);
-    --text-positive:            var(--piOSwhite);
-    --text-warning:             var(--piOSwhite);
-    --text-danger:              var(--piOSaccent);
-    --text-brand:               hsl(var(--piOSaccenthue), calc(var(--saturation-factor)*80%), 50%);
-    --interactive-normal:       var(--piOSlightgrey);
-    --interactive-muted:        var(--piOSgrey);
-    --interactive-active:       var(--piOSwhite); /* default: unread dot marker, current channel name */
+	--header-primary:           var(--dosBlu); /* Server name, channel name, default user colour */
+	--header-secondary:         var(--dosCyn);
+    --text-normal:              var(--dosBlk);
+    --text-muted:               var(--dosDrkGry);
+    --text-link:                var(--dosLtBlu);
+    --text-link-low-saturation: var(--dosLtCyn);
+    --text-positive:            var(--dosGrn);
+    --text-warning:             var(--dosYel);
+    --text-danger:              var(--dosRed);
+    --text-brand:               hsl(var(--dosRed), calc(var(--saturation-factor)*80%), 50%);
+    --interactive-normal:       var(--dosGry);
+    --interactive-muted:        var(--dosDrkGry);
+    --interactive-active:       var(--dosWht); /* default: unread dot marker, current channel name */
 
     /* Backgrounds */
-    --background-primary:       var(--piOSblack);
-    --background-secondary:     var(--piOSblack);
-    --background-secondary-alt: var(--piOSblack);
-    --background-tertiary:      var(--piOSblack);
-    --background-mobile-primary:    var(--piOSblack);
-    --background-mobile-secondary:  var(--piOSblack);
+    --background-primary:       var(--dosGry);
+    --background-secondary:     var(--dosGry);
+    --background-secondary-alt: var(--dosBlu);
+    --background-tertiary:      var(--dosDrkGry);
+    --background-mobile-primary:    var(--dosGry);
+    --background-mobile-secondary:  var(--dosGry);
     --background-accent:        var(--piOSaccent);
     --background-floating:      var(--piOSblack);
 	--background-mentioned:     hsla(var(--piOSaccenthue), calc(var(--saturation-factor)*100%), 50%, 0.2);
